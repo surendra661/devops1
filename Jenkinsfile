@@ -1,7 +1,7 @@
 pipeline {
     agent any
     triggers {
-        POLLSCM('H/2 * * * *')
+        pollSCM('H/2 * * * *')
     }
 
     stages {
@@ -10,7 +10,6 @@ pipeline {
                 echo "Hello All Welcome to Devops World"
             }
         }
-        stages {
             stage("changing poll") {
                 steps {
                     echo "new changes added"
