@@ -1,0 +1,19 @@
+pipeline {
+    agent any
+    triggers {
+        pollSCM('H/2 * * * *')
+    }
+
+    stages {
+        stage("Hello") {
+            steps {
+                echo "Hello All Welcome to Devops World"
+            }
+        }
+            stage("changing poll") {
+                steps {
+                    echo "new changes added"
+                }
+            }
+    }
+}
