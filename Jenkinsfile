@@ -15,5 +15,5 @@ pipeline {
                     echo "new changes added"
                 }
             }
-        }
     }
+}
