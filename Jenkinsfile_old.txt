@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage("Hello") {
             steps {
-                echo "Hello All Welcome to Devops ROW"
+                echo "Hello All Welcome to Devops World"
             }
         }
             stage("changing poll") {
